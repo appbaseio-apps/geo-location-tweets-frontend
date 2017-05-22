@@ -23,7 +23,7 @@ class Main extends Component {
 				target="_blank">
 				<div className="row">
 					<div className="col s2">
-						<img src={marker.user.profile_image_url_https} width="80px"/>
+						<img src={marker.user.profile_image_url_https} width="80px" />
 					</div>
 					<div className="col s10">
 						<div>
@@ -47,7 +47,9 @@ class Main extends Component {
 				target="_blank">
 				<div className="row" style={{ "marginBottom": "-10px", "marginTop": "10px" }}>
 					<div className="col s2">
-						<img src={marker.user.profile_image_url_https}  />
+				{/*}		<img src={marker.user.profile_image_url_https} />  */}
+						<img src={marker.user.profile_image_url_https} width="80px"/>
+
 					</div>
 					<div className="col s10">
 						<div>
@@ -68,8 +70,8 @@ class Main extends Component {
 		return (
 			<div className="row grey lighten-3">
 				<ReactiveBase
-					app="Geo-Location-Tweets"
-					credentials="xf6lxKyyK:e18f20e9-e95d-4173-a1a9-63f947320f45"
+					app="geo-location-tweets"
+					credentials="efVz07yyH:4b8d112a-7f33-484e-9c63-a4dd455ab5a9"
 					type="new_data"
 					>
 					<div className="col s12 col-xs-12 col-sm-6" style={{ "marginTop": "20px" }}>
@@ -130,7 +132,7 @@ class Main extends Component {
 								}}
 								title="Tweets"
 								from={0}
-								size={20}
+								size={100}
 								requestOnScroll={true}
 								onData={this.onData}
 								react={{
